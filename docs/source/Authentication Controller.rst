@@ -7,6 +7,8 @@ The ``AuthenticationController`` handles user authentication and registration. I
 
     backend_dotnet\Controllers\AuthenticationController.cs
 
+It handles user authentication and registration, providing endpoints for user login, registration, email verification, and retrieving the nonce for a given wallet address. It is located at:
+
 Routes
 ------
 

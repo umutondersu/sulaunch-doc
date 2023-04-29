@@ -7,6 +7,8 @@ The ``EventDebugController`` is used for debugging purposes and to check the whi
 
     backend_dotnet\Controllers\EventDebugController.cs
 
+The ``EventDebugController`` is used for debugging purposes and checking the whitelisting status of users, providing endpoints for retrieving event logs and checking if a user is whitelisted based on their wallet address. It is located at:
+
 Routes
 ------
 
