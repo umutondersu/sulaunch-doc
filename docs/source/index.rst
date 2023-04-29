@@ -22,6 +22,7 @@ Contents
    :maxdepth: 1
    :caption: Controllers
 
+   Controllers Introduction
    Authentication Controller
    Event Debug Controller
 
