@@ -16,5 +16,6 @@ Contents
 
 .. toctree::
 
+   Authentication Controller
    usage
    api
