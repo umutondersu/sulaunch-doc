@@ -1,9 +1,9 @@
-Template for the Read the Docs tutorial
+Sulaunch Devoloper Documentation
 =======================================
 
-This GitHub template includes fictional Python library
+This GitHub repository includes the developer documentation for the Sulaunch platform
 with some basic Sphinx docs.
 
-Read the tutorial here:
+Read the tutorial for readthedocs here:
 
 https://docs.readthedocs.io/en/stable/tutorial/
