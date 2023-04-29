@@ -18,4 +18,3 @@ Contents
 
    Authentication Controller
    usage
-   api
