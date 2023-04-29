@@ -1,5 +1,5 @@
 Authentication Controller
-=========================
+===========================
 
 The ``AuthenticationController`` handles user authentication and registration. It is located at:
 
