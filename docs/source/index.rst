@@ -1,5 +1,5 @@
 Welcome to Sulaunch's developer documentation!
-===================================
+================================================
 
 **SuLaunch** is an ENS491/492 project offered at the Sabanci University as a graduation project. The main aim of this project is to introduce Blockchain technology to CS enthusiasts and wants to explore new technology.
 
@@ -17,4 +17,5 @@ Contents
 .. toctree::
 
    Authentication Controller
+   Event Debug Controller
    usage
