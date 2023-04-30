@@ -31,4 +31,5 @@ Contents
    backend/controllers/Controllers Introduction
    backend/controllers/Authentication Controller
    backend/controllers/Event Debug Controller
+   backend/controllers/User Controller
 
