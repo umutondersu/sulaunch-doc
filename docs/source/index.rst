@@ -14,15 +14,21 @@ This is a code documentation for developers.
 Contents
 --------
 
-.. toctree:: 
-   
+.. toctree::
+
    usage
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :caption: backend
+
+   backend/Backend Introduction
+
+.. toctree::
+   :maxdepth: 3
    :caption: Controllers
 
-   Controllers Introduction
-   Authentication Controller
-   Event Debug Controller
+   backend/controllers/Controllers Introduction
+   backend/controllers/Authentication Controller
+   backend/controllers/Event Debug Controller
 
