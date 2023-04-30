@@ -9,7 +9,7 @@ One of the key points of this part of the project is to protect the ideas of the
 
 The motivation for the project lies in the safety of the project’s owner’s rights, decentralization of the funding mechanisms around the schools, and providing a solid foundation for the later blockchain use cases which can be utilized through SUCoin.
 
-This is a code documentation for developers.
+This is a code documentation for developers. Since it is about how the platform works, It is recommended that you read the `User Documentation <https://umutondersu.github.io/Sulaunch/>`_ first.
 
 Contents
 --------
@@ -20,9 +20,12 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   :caption: backend
+   :caption: Backend
 
    backend/Backend Introduction
+   backend/Constants
+   backend/Data Context
+   backend/Data Transfer Objects
 
 .. toctree::
    :maxdepth: 3
