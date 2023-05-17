@@ -19,3 +19,8 @@ UserController
 --------------
 
 The UserController is responsible for managing user-related operations. These include retrieving user details, updating user information, deleting a user, inviting a user to a project, managing project invitations, and listing all users. This controller also handles operations related to project co-owners, removing collaboration permissions from users, and updating user roles.
+
+ProjectController
+-----------------
+
+The ProjectController is responsible for managing project-related operations. These include creating a new project, retrieving project details, updating project information, deleting a project, listing all projects, and listing all projects a user is a member of. This controller also handles operations related to project co-owners, removing collaboration permissions from users, and updating user roles.
