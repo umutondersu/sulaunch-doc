@@ -37,3 +37,10 @@ Contents
    backend/controllers/User Controller
    backend/controllers/Project Controller
 
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Frontend
+
+   frontend_react\src\components\HomeNew.js
+   
