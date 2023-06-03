@@ -16,7 +16,7 @@ Contents
 
 .. toctree::
 
-   setup
+   Setup
 
 .. toctree::
    :maxdepth: 1
@@ -42,5 +42,6 @@ Contents
    :maxdepth: 1
    :caption: Frontend
 
-   frontend_react\src\components\HomeNew.js
+   frontend/Home New
+   frontend/Project List
    
