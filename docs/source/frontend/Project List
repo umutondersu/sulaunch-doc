@@ -1,0 +1,114 @@
+# The ProjectList Component
+
+The `ProjectList` component is located at:
+
+.. code-block:: bash
+
+frontend_react/src/components/ProjectList.js
+
+## Overview
+
+The `ProjectList` component displays a list of projects in the web application. It is responsible for fetching the project data from the backend, allowing for filtering by project status, and rendering the project data in a grid format.
+
+## Key Features
+
+1. **Data Fetching:** Fetches project data from the backend using `axios`.
+
+2. **Role and Token Handling:** Retrieves the user role from the token stored in cookies. It uses this to determine what projects should be displayed based on the role of the user.
+
+3. **Project Filtering:** Allows for filtering the displayed projects by their status (e.g., all, approved, pending, rejected).
+
+4. **Grid Display:** Displays projects in a grid format using the `SimpleGrid` component from `@chakra-ui/react`.
+
+5. **Loading State Handling:** Displays a loading icon while project data is being fetched, transitioning to the actual content once data is ready.
+
+## Key Code Excerpt
+
+Here is an excerpt from the code that demonstrates some of these features:
+
+.. code-block:: javascript
+
+const ProjectList = () => {
+const [error, setError] = useState(false);
+const [alignment, setAlignment] = useState(radios[0]);
+const [projects, setProjects] = useState(pj);
+const [listedProjects, setListedProjects] = useState();
+const [response, setResponse] = useState([]);
+const [isLoading, setIsLoading] = useState(true);
+const [role, setRole] = useState(null);
+...
+useEffect(() => {
+const setupAllProjects = async () => {
+...
+const token = Cookies.get("token");
+if (token) {
+const tokenRole = JSON.parse(
+Buffer.from(token.split(".")[1], "base64")?.toString()
+)?.role.toLowerCase();
+
+            console.log("Role:", tokenRole);
+
+            if (token) {
+              setRole(tokenRole);
+            } else {
+              setRole(null);
+            }
+          } else {
+            setRole(null);
+          }
+          ...
+        };
+        setupAllProjects();
+      }, []);
+
+      useEffect(() => {
+        const alignmentSetup = async () => {
+          ...
+          alignment != 0
+            ? setListedProjects(
+                projects.filter(
+                  (project) => project.status == radios[alignment].name
+                )
+              )
+            : setListedProjects(projects);
+          ...
+        };
+        alignmentSetup();
+      }, [alignment]);
+
+      return isLoading ? (
+        ...
+      ) : (
+        <MantineProvider withNormalizeCSS withGlobalStyles>
+          <NotificationsProvider position="bottom-center">
+            <div className="projects-page">
+            ...
+            <div style={{ width: "90%", textAlign: "center", margin: "auto" }}>
+              {listedProjects.length > 0 ? (
+                <SimpleGrid minChildWidth="40vw" spacing="40px">
+                  {listedProjects.map((project, index) => (
+                    <ProjectCard
+                      ...
+                    />
+                  ))}
+                </SimpleGrid>
+              ) : (
+                <div>
+                  <div
+                    className="sectionName"
+                    style={{ display: "flex", justifyContent: "center" }}>
+                    No Projects Found
+                  </div>
+                </div>
+              )}
+            </div>
+            ...
+          </NotificationsProvider>
+        </MantineProvider>
+      );
+
+};
+...
+export default ProjectList;
+
+This component is built with React and uses the Chakra UI library for layout and
