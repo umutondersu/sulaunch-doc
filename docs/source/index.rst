@@ -16,7 +16,7 @@ Contents
 
 .. toctree::
 
-   Setup
+   setup
 
 .. toctree::
    :maxdepth: 1
