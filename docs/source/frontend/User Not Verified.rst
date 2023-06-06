@@ -27,5 +27,6 @@ Features
 4. **Styling and Layout**: Uses inline CSS styling to center the message text vertically and horizontally in the viewport. Also sets the font family, font weight, and font size of the message.
 
 Usage
-=====
+======
 The UserNotVerified component is used when the user tries to access a resource with an expired verification link. It informs the user of the situation and redirects them to the home page after a short delay.
+
