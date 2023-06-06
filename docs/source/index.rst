@@ -44,4 +44,10 @@ Contents
 
    frontend/Home New
    frontend/Project List
-   
+   frontend/Create Tokens
+   frontend/Create Auction
+   frontend/Auctions
+   frontend/Project
+   frontend/Auction
+   frontend/Profile Page
+
