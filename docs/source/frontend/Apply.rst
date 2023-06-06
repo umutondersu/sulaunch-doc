@@ -8,7 +8,8 @@ The ``Apply`` component is found at:
     rontend_react/src/components/Apply.js
 
 Overview
-=========
+------------
+
 
 ``Apply`` is a React component that provides the user interface for a form that accepts project details and saves them in a blockchain database.
 
