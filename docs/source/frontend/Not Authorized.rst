@@ -1,5 +1,5 @@
 NotAuthorized Component
-=====================================
+========================
 
 The ``NotAuthorized`` component is found at:
 
