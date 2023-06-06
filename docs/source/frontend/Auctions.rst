@@ -1,5 +1,3 @@
-.. _Auctions-component:
-
 Auctions Component
 =====================
 
