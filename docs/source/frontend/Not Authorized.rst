@@ -1,5 +1,6 @@
 NotAuthorized Component
 =====================================
+
 The ``NotAuthorized`` component is found at:
 
 .. code-block:: bash
@@ -8,7 +9,6 @@ The ``NotAuthorized`` component is found at:
 
 Overview
 =========
-
 The ``NotAuthorized`` component is used to display an authorization error message to the user, indicating that they do not have the necessary permissions to view the page they attempted to access. After a delay of 3000 milliseconds (3 seconds), the component automatically redirects the user to the root ('/') route.
 
 Features
