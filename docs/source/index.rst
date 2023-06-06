@@ -16,7 +16,7 @@ Contents
 
 .. toctree::
 
-   Setup
+   setup
 
 .. toctree::
    :maxdepth: 1
@@ -50,3 +50,4 @@ Contents
    frontend/Project
    frontend/Auction
    frontend/Profile Page
+
