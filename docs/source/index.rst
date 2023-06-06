@@ -16,7 +16,7 @@ Contents
 
 .. toctree::
 
-   Setup
+   setup
 
 .. toctree::
    :maxdepth: 1
@@ -58,3 +58,4 @@ Contents
    frontend/User Verified
    frontend/Apply 
    frontend/How To Use
+
