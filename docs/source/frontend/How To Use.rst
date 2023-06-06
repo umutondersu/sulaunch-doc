@@ -9,7 +9,7 @@ The ``HowToUse`` component is found at:
    frontend_react/src/components/HowToUse.js
 
 Overview
-=========
+------------
 
 ``HowToUse`` is a React component that is primarily used to redirect users to an external website that contains the 'how to use' guide of the project.
 
