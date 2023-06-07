@@ -6,20 +6,20 @@ Create Auction Event
 Properties:
 
 1. `Creator`
-   - **Type**: `string`
-   - **Description**: Represents the address of the creator who initiated the auction.
+    * **Type**: `string`
+    * **Description**: Represents the address of the creator who initiated the auction.
 
 2. `Auction`
-   - **Type**: `string`
-   - **Description**: Represents the address of the created auction.
+    * **Type**: `string`
+    * **Description**: Represents the address of the created auction.
 
 3. `AuctionType`
-   - **Type**: `string`
-   - **Description**: Represents the type of the auction.
+    * **Type**: `string`
+    * **Description**: Represents the type of the auction.
 
 4. `FileHash`
-   - **Type**: `byte[]`
-   - **Description**: Represents the hash of the associated file.
+    * **Type**: `byte[]`
+    * **Description**: Represents the hash of the associated file.
 
 This class is decorated with the `[Event("CreateAuctionEvent")]` attribute, indicating that it represents an event with the name "CreateAuctionEvent". It implements the `IEventDTO` interface provided by the `Nethereum.Contracts` namespace.
 
