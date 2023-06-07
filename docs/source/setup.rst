@@ -1,12 +1,11 @@
-Setup
-=====
+Setup Guide
+===========
 
-General
--------
+Requirements
+------------
 
-Pull the latest version of the project Install node.js v18
-
-Install pnpm with (npm install -g pnpm)
+-  Pull the latest version of the project Install node.js v18
+-  Install pnpm with (npm install -g pnpm)
 
 To Run Frontend:
 ----------------
@@ -45,13 +44,17 @@ To set up metamask
 
 Create a wallet Go to settings -> networks -> Add a network
 
-Network Name: Avalanche FUJI C-Chain (You can edit this if you want) New
-RPC URL:
-https://nd-363-962-610.p2pify.com/e561a44aeaec63c0ab48af257d3352fe/ext/bc/C/rpc
-Chain Id : 43113 Currency symbol : AVAX Block explorer URL :
-https://testnet.snowtrace.io/
+Network Name: Mumbai Testnet (Optional) New RPC URL:
+https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78
+Chain ID: 80001 Currency Symbol: MATIC Block Explorer URL (optional):
+https://mumbai.polygonscan.com
 
-Press save and use this network while entering the website
+After the network, go to assets -> Import Tokens and enter the current
+address of SUCoin.
+
+Press save and use this Metamask settings while entering the website.
+This process is automatic for users when they first enter the website.
+They just need to agree on the changes.
 
 Docker Setup
 ------------
@@ -115,5 +118,57 @@ run: screen -x
 To terminate the current screen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Press CTRL+A and then Y and then Enter
+Press CTRL+A and then K then Y and then Enter
 
+Smart Contract Deployment
+-------------------------
+
+When the project will operate on the Polygon Mainnet, Contracts have to
+be redeployed with the instructions below:
+
+``Sucoin``, ``Project Register`` and ``BokkyPooBahsRedBlackTreeLibrary``
+Contracts need to be deployed manually before all the others and their
+address needs to be set in the ``deploy_maestro.js`` file at
+frontend_react:raw-latex:`\src`:raw-latex:`\contracts`\_hardhat:raw-latex:`\scripts`:raw-latex:`\deploy`\_maestro.js.
+
+``Sucoin`` is handled by the Supayment team. Please contact them to
+learn the address of the contract.
+
+``Project Register`` is in
+frontend_react:raw-latex:`\src`:raw-latex:`\contracts`\_hardhat:raw-latex:`\contracts`.
+
+``BokkyPooBahsRedBlackTreeLibrary`` is in the libraries folder of the
+same directory.
+
+Deploy them using Remix or any other contract deployment tool. To learn
+how to deploy contracts using Remix, please refer
+`here <https://wiki.polygon.technology/docs/develop/remix/>`__
+
+After these steps, hardhat.config.js file needs to be updated for the
+polygon mainnet. the necessary steps can be found
+`here <https://wiki.polygon.technology/docs/develop/hardhat>`__ at the
+``Setting up the contract`` section.
+
+Now the rest of the contracts are ready to be deployed. To deploy them
+with hardhat run the following commands in the
+frontend_react:raw-latex:`\src`:raw-latex:`\contracts`\_hardhat
+directory:
+
+pnpm hardhat compile
+
+pnpm hardhat run scripts/deploy_maestro.js –polygon_mumbai
+
+After the contracts are deployed, their addresses will be printed to the
+console. These addresses need to be set in the location of the contract
+addresses in the project before booting up.
+
+Locations of Contract Addresses
+-------------------------------
+
+Enviorment Variables: - REACT_APP_MAESTRO_ADDRESS for Maestro(Auction)
+Contract - REACT_APP_PROJECT_REGISTER_ADDRESS for ProjectRegister
+Contract - REACT_APP_SUCOIN_ADDRESS for Sucoin Contract
+
+They can also be set in the following files: -
+backend_dotnet:raw-latex:`\Constants`:raw-latex:`\ContractConstants`.cs
+- frontend_react:raw-latex:`\src`:raw-latex:`\config`.js
