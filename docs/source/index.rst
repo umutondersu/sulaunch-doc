@@ -22,19 +22,90 @@ Contents
 .. toctree::
    :maxdepth: 2
    :caption: Backend
-   :glob:
 
    backend/Backend Introduction
    backend/Constants
    backend/Data Context
    backend/Data Transfer Objects
-   backend/controllers/*
-   backend/dtos/*
-   backend/models/*
-   backend/request/*
-   backend/response/*
-   backend/services/*
+   :ref:controllers
 
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Controllers
+   :name: controllers
+   :hidden:
+
+   backend/controllers/Controllers Introduction
+   backend/controllers/Authentication Controller
+   backend/controllers/Event Debug Controller
+   backend/controllers/User Controller
+   backend/controllers/Project Controller
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Models
+   :name: models
+   :hidden:
+
+   backend/models/Projects
+   backend/models/ProjectPermission
+   backend/models/Rating
+   backend/models/User
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Request
+   :name: request
+   :hidden:
+
+   backend/request/ProjectPermissionRequest
+   backend/request/ProjectRequest
+   backend/request/UserLoginRequest
+   backend/request/UserRegisterRequest
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Response
+   :name: response
+   :hidden:
+
+   backend/response/ServiceResponse
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Services
+   :name: services
+   :hidden:
+
+   backend/services/AuthenticationService
+   backend/services/ChainInteractionService
+   backend/services/IpfsInteractionService
+
+.. toctree::
+   :maxdepth: 1
+   :caption: DTOS
+   :name: dtos
+   :hidden:
+
+   backend/dtos/AdminChangeEvent
+   backend/dtos/AuctionFinishedEvent
+   backend/dtos/AuctionStartedEvent
+   backend/dtos/BidSubmissionEvent
+   backend/dtos/ClaimTokensEvent
+   backend/dtos/CreateAuctionEvent
+   backend/dtos/DutchAuctionBidEvent
+   backend/dtos/HashToProject
+   backend/dtos/Project
+   backend/dtos/ProjectEvaluationEvent
+   backend/dtos/ProjectRegisterEvent
+   backend/dtos/ProjectTemplate
+   backend/dtos/TokenCreationEvent
+   backend/dtos/User
+   backend/dtos/VoteDelegateEvent
+   backend/dtos/VoteEvent
+   backend/dtos/WhitelistInsertEvent
+   backend/dtos/WhitelistRemoveEvent
 
 .. toctree::
    :maxdepth: 1
