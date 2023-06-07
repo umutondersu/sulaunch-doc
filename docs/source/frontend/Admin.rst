@@ -26,8 +26,6 @@ Features
 
 4. **Notification**: Integrates the ``useToast`` function from the '@chakra-ui/react' library for displaying notifications to the admin.
 
-Note: Part of the User Operations section is commented out but it seems it would handle user promotion to admin role and user deletion.
-
 Usage
 =====
 The Admin component is intended for use by system administrators for management of users, projects, and auctions within the system.
