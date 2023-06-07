@@ -44,14 +44,17 @@ To set up metamask
 
 Create a wallet Go to settings -> networks -> Add a network
 
+
 Network Name: Mumbai Testnet (Optional)
 
 New RPC URL: https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78
+
 Chain ID: 80001 
 
 Currency Symbol: MATIC 
 
 Block Explorer URL (optional): https://mumbai.polygonscan.com
+
 
 After the network, go to assets -> Import Tokens and enter the current
 address of SUCoin.
