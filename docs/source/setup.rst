@@ -44,10 +44,11 @@ To set up metamask
 
 Create a wallet Go to settings -> networks -> Add a network
 
-Network Name: Mumbai Testnet (Optional) New RPC URL:
-https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78
-Chain ID: 80001 Currency Symbol: MATIC Block Explorer URL (optional):
-https://mumbai.polygonscan.com
+Network Name: Mumbai Testnet (Optional) 
+New RPC URL: https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78
+Chain ID: 80001 
+Currency Symbol: MATIC 
+Block Explorer URL (optional): https://mumbai.polygonscan.com
 
 After the network, go to assets -> Import Tokens and enter the current
 address of SUCoin.
@@ -129,13 +130,12 @@ be redeployed with the instructions below:
 ``Sucoin``, ``Project Register`` and ``BokkyPooBahsRedBlackTreeLibrary``
 Contracts need to be deployed manually before all the others and their
 address needs to be set in the ``deploy_maestro.js`` file at
-frontend_react:raw-latex:`\src`:raw-latex:`\contracts`\_hardhat:raw-latex:`\scripts`:raw-latex:`\deploy`\_maestro.js.
+frontend_react\src\contracts_hardhat\scripts\deploy_maestro.js
 
 ``Sucoin`` is handled by the Supayment team. Please contact them to
 learn the address of the contract.
 
-``Project Register`` is in
-frontend_react:raw-latex:`\src`:raw-latex:`\contracts`\_hardhat:raw-latex:`\contracts`.
+``Project Register`` is in frontend_react\src\contracts_hardhat\contracts
 
 ``BokkyPooBahsRedBlackTreeLibrary`` is in the libraries folder of the
 same directory.
@@ -151,8 +151,7 @@ polygon mainnet. the necessary steps can be found
 
 Now the rest of the contracts are ready to be deployed. To deploy them
 with hardhat run the following commands in the
-frontend_react:raw-latex:`\src`:raw-latex:`\contracts`\_hardhat
-directory:
+frontend_react\src\contracts_hardhat directory:
 
 pnpm hardhat compile
 
@@ -164,11 +163,11 @@ addresses in the project before booting up.
 
 Locations of Contract Addresses
 -------------------------------
-
-Enviorment Variables: - REACT_APP_MAESTRO_ADDRESS for Maestro(Auction)
-Contract - REACT_APP_PROJECT_REGISTER_ADDRESS for ProjectRegister
-Contract - REACT_APP_SUCOIN_ADDRESS for Sucoin Contract
+Enviorment Variables:
+-  REACT_APP_MAESTRO_ADDRESS for Maestro(Auction) Contract
+-  REACT_APP_PROJECT_REGISTER_ADDRESS for ProjectRegister Contract
+-  REACT_APP_SUCOIN_ADDRESS for Sucoin Contract
 
 They can also be set in the following files: -
-backend_dotnet:raw-latex:`\Constants`:raw-latex:`\ContractConstants`.cs
-- frontend_react:raw-latex:`\src`:raw-latex:`\config`.js
+-  backend_dotnet/Constants/ContractConstants.c
+-  frontend_react/src/config.js
