@@ -23,7 +23,6 @@ Contents
    :maxdepth: 2
    :caption: Backend
 
-   backend/Backend Introduction
    backend/Constants
    backend/Data Context
    backend/Data Transfer Objects
