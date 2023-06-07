@@ -178,5 +178,5 @@ Enviorment Variables:
 
 They can also be set in the following files:
 
--  backend_dotnet/Constants/ContractConstants.c
+-  backend_dotnet/Constants/ContractConstants.cs
 -  frontend_react/src/config.js

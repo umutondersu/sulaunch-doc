@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'Sulaunch'
-copyright = ''
+copyright = 'Sulaunch'
 author = 'Umut Şahin Önder'
 
 release = '0.1'

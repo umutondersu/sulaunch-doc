@@ -23,18 +23,15 @@ Contents
    :maxdepth: 2
    :caption: Backend
 
-   backend/Backend Introduction
    backend/Constants
    backend/Data Context
    backend/Data Transfer Objects
-   :ref:controllers
 
 
 .. toctree::
    :maxdepth: 1
    :caption: Controllers
    :name: controllers
-   :hidden:
 
    backend/controllers/Controllers Introduction
    backend/controllers/Authentication Controller
@@ -46,7 +43,6 @@ Contents
    :maxdepth: 1
    :caption: Models
    :name: models
-   :hidden:
 
    backend/models/Projects
    backend/models/ProjectPermission
@@ -57,7 +53,6 @@ Contents
    :maxdepth: 1
    :caption: Request
    :name: request
-   :hidden:
 
    backend/request/ProjectPermissionRequest
    backend/request/ProjectRequest
@@ -68,7 +63,6 @@ Contents
    :maxdepth: 1
    :caption: Response
    :name: response
-   :hidden:
 
    backend/response/ServiceResponse
 
@@ -76,7 +70,6 @@ Contents
    :maxdepth: 1
    :caption: Services
    :name: services
-   :hidden:
 
    backend/services/AuthenticationService
    backend/services/ChainInteractionService
@@ -86,7 +79,6 @@ Contents
    :maxdepth: 1
    :caption: DTOS
    :name: dtos
-   :hidden:
 
    backend/dtos/AdminChangeEvent
    backend/dtos/AuctionFinishedEvent
