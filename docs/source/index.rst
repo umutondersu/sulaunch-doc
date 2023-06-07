@@ -20,23 +20,19 @@ Contents
    setup
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Backend
 
    backend/Backend Introduction
    backend/Constants
    backend/Data Context
    backend/Data Transfer Objects
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Controllers
-
-   backend/controllers/Controllers Introduction
-   backend/controllers/Authentication Controller
-   backend/controllers/Event Debug Controller
-   backend/controllers/User Controller
-   backend/controllers/Project Controller
+   backend/controllers/*
+   backend/dtos/*
+   backend/models/*
+   backend/request/*
+   backend/response/*
+   backend/services/*
 
 
 .. toctree::

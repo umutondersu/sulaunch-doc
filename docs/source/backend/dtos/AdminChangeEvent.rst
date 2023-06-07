@@ -6,12 +6,12 @@ Admin Change Event
 Properties:
 
 1. `From`
-   - **Type**: `address`
-   - **Description**: Represents the address of the previous admin.
+    * **Type**: `address`
+    * **Description**: Represents the address of the previous admin.
 
 2. `To`
-   - **Type**: `address`
-   - **Description**: Represents the address of the new admin.
+    * **Type**: `address`
+    * **Description**: Represents the address of the new admin.
 
 This class is decorated with the `[Event("AdminChange")]` attribute, indicating that it represents an event with the name "AdminChange". It implements the `IEventDTO` interface provided by the `Nethereum.Contracts` namespace.
 

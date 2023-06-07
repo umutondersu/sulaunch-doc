@@ -6,12 +6,12 @@ AuctionStartedEvent
 Properties:
 
 1. `Start`
-   - **Type**: `uint`
-   - **Description**: Represents the start time of the auction.
+    * **Type**: `uint`
+    * **Description**: Represents the start time of the auction.
 
 2. `End`
-   - **Type**: `uint`
-   - **Description**: Represents the end time of the auction.
+    * **Type**: `uint`
+    * **Description**: Represents the end time of the auction.
 
 This class is decorated with the `[Event("AuctionStarted")]` attribute, indicating that it represents an event with the name "AuctionStarted". It implements the `IEventDTO` interface provided by the `Nethereum.Contracts` namespace.
 
