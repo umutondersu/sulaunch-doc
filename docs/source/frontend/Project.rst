@@ -5,7 +5,7 @@ The `Project` component is found at:
 
 .. code-block:: bash
 
-frontend_react/src/components/Project.js
+    frontend_react/src/components/Project.js
 
 Overview
 --------
