@@ -22,6 +22,7 @@ Contents
 .. toctree::
    :maxdepth: 2
    :caption: Backend
+   :glob:
 
    backend/Backend Introduction
    backend/Constants
