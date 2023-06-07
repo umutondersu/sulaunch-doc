@@ -130,12 +130,12 @@ be redeployed with the instructions below:
 ``Sucoin``, ``Project Register`` and ``BokkyPooBahsRedBlackTreeLibrary``
 Contracts need to be deployed manually before all the others and their
 address needs to be set in the ``deploy_maestro.js`` file at
-frontend_react\src\contracts_hardhat\scripts\deploy_maestro.js
+frontend_react/src/contracts_hardhat/scripts/deploy_maestro.js
 
 ``Sucoin`` is handled by the Supayment team. Please contact them to
 learn the address of the contract.
 
-``Project Register`` is in frontend_react\src\contracts_hardhat\contracts
+``Project Register`` is in frontend_react/src/contracts_hardhat/contracts
 
 ``BokkyPooBahsRedBlackTreeLibrary`` is in the libraries folder of the
 same directory.
@@ -151,7 +151,7 @@ polygon mainnet. the necessary steps can be found
 
 Now the rest of the contracts are ready to be deployed. To deploy them
 with hardhat run the following commands in the
-frontend_react\src\contracts_hardhat directory:
+frontend_react/src/contracts_hardhat directory:
 
 pnpm hardhat compile
 
